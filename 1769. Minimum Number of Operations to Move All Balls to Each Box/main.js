@@ -6,7 +6,7 @@ var minOperations = function (boxes) {
   let result = [];
   let ballInBoxes = [];
   for (var i = 0; i < boxes.length; i++) {
-    if (boxes[i] === 1) {
+    if (parseInt(boxes.charAt(i)) === 1) {
       ballInBoxes.push(i);
     }
   }
