@@ -15,4 +15,6 @@ var countMatches = function (items, ruleKey, ruleValue) {
       result++;
     }
   }
+
+  return result;
 };
