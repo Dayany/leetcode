@@ -9,10 +9,8 @@ var maxWidthOfVerticalArea = function (points) {
   let orderedXPoints = xPoints.sort(function (a, b) {
     return a - b;
   });
-  console.log(orderedXPoints);
   for (let i = 0; i < orderedXPoints.length - 1; i++) {
     let diff = Math.abs(orderedXPoints[i] - orderedXPoints[i + 1]);
-    console.log(diff);
     if (diff > result) result = diff;
   }
   return result;
